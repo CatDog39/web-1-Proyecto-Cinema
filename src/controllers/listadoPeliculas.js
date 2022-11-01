@@ -1,0 +1,79 @@
+let peliculas=[
+    {
+        nombre:"Amsterdam",
+        duracion:120,
+        poster:"https://firebasestorage.googleapis.com/v0/b/cinemaalbert-3aa79.appspot.com/o/AMSTERDAMNUEVO1.jpg?alt=media&token=45a43f89-3af7-4b27-8f78-8b0d21d9fa2c"
+    },
+    {
+        nombre:"Blackadam",
+        duracion:140,
+        poster:"https://firebasestorage.googleapis.com/v0/b/cinemaalbert-3aa79.appspot.com/o/Blackadam.jpg?alt=media&token=53c41265-872c-425e-b86e-f5d1bb6e5730"
+    },
+    {
+        nombre:"Supermascotas",
+        duracion:100,
+        poster:"https://firebasestorage.googleapis.com/v0/b/cinemaalbert-3aa79.appspot.com/o/SUPERMASCOTAS.jpg?alt=media&token=15f14f8e-d02c-4a2b-88b8-3b9331d0e64b"
+    },
+    {
+        nombre:"Hallowen",
+        duracion:120,
+        poster:"https://firebasestorage.googleapis.com/v0/b/cinemaalbert-3aa79.appspot.com/o/hallowenultimo.jpg?alt=media&token=74e6095d-ee13-4124-b9d6-d498eede57ec"
+    },
+    {
+        nombre:"OnePiece",
+        duracion:110,
+        poster:"https://firebasestorage.googleapis.com/v0/b/cinemaalbert-3aa79.appspot.com/o/ONEPIECE1.jpg?alt=media&token=5282128c-53bd-432d-80b3-a988fc6bcabc"
+    },
+    {
+        nombre:"Sonrie",
+        duracion:90,
+        poster:"https://firebasestorage.googleapis.com/v0/b/cinemaalbert-3aa79.appspot.com/o/SONRIE1.jpg?alt=media&token=127ca637-7cc8-4ad3-8b66-c6ea9b398d76"
+    },
+    {
+        nombre:"Jeeppers",
+        duracion:98,
+        poster:"https://firebasestorage.googleapis.com/v0/b/cinemaalbert-3aa79.appspot.com/o/jeeppers.jpg?alt=media&token=9cee5671-3e1b-4465-863d-08eed87900a9"
+    },
+    {
+        nombre:"Minions2",
+        duracion:100,
+        poster:"https://firebasestorage.googleapis.com/v0/b/cinemaalbert-3aa79.appspot.com/o/minions2.jpg?alt=media&token=c7a81d41-7a9e-49b6-89b7-0ba42ae7f591"
+    },
+    {
+        nombre:"Minions2",
+        duracion:100,
+        poster:"https://firebasestorage.googleapis.com/v0/b/cinemaalbert-3aa79.appspot.com/o/minions2.jpg?alt=media&token=c7a81d41-7a9e-49b6-89b7-0ba42ae7f591"
+    },
+    {
+        nombre:"Minions2",
+        duracion:100,
+        poster:"https://firebasestorage.googleapis.com/v0/b/cinemaalbert-3aa79.appspot.com/o/minions2.jpg?alt=media&token=c7a81d41-7a9e-49b6-89b7-0ba42ae7f591"
+    },
+    {
+        nombre:"Minions2",
+        duracion:100,
+        poster:"https://firebasestorage.googleapis.com/v0/b/cinemaalbert-3aa79.appspot.com/o/minions2.jpg?alt=media&token=c7a81d41-7a9e-49b6-89b7-0ba42ae7f591"
+    },
+    {
+        nombre:"Minions2",
+        duracion:100,
+        poster:"https://firebasestorage.googleapis.com/v0/b/cinemaalbert-3aa79.appspot.com/o/minions2.jpg?alt=media&token=c7a81d41-7a9e-49b6-89b7-0ba42ae7f591"
+    },
+    {
+        nombre:"Minions2",
+        duracion:100,
+        poster:"https://firebasestorage.googleapis.com/v0/b/cinemaalbert-3aa79.appspot.com/o/minions2.jpg?alt=media&token=c7a81d41-7a9e-49b6-89b7-0ba42ae7f591"
+    }
+]
+
+let fila=document.getElementById("fila")
+
+peliculas.forEach(function(pelicula){
+    console.log(pelicula.poster)
+
+    let foto=document.createElement("img")
+    foto.src=pelicula.poster
+    foto.classList.add("img-fluid","w-100")
+
+    fila.appendChild(foto)
+})
